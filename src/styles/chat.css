@@ -1,0 +1,89 @@
+/* Container for the chat application */
+.chat-app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+.header {
+    background-color: #4a76a8;
+    color: black;
+    padding: 16px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Messages container styling */
+.messages {
+    flex-grow: 1;
+    padding: 16px;
+    overflow-y: auto;
+    background-color: #ffffff;
+}
+
+/* Each message styling */
+.message {
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    max-width: 80%;
+    word-wrap: break-word;
+    color: black;
+}
+
+/* Styling for the user name in each message */
+.user {
+    font-weight: bold;
+    color: black;
+    margin-right: 8px;
+}
+
+/* Message input form styling */
+.new-message-form {
+    display: flex;
+    padding: 16px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+}
+
+/* Message input field styling */
+.new-message-input {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    margin-right: 8px;
+    transition: border-color 0.2s;
+}
+
+.new-message-input:focus {
+    border-color: #4a76a8;
+}
+
+/* Send button styling */
+.send-button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #4a76a8;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.send-button:hover {
+    background-color: #3a5a85;
+}

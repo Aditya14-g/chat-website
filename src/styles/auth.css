@@ -1,0 +1,51 @@
+/* Container for the authentication page */
+.auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Sign-in text styling */
+.auth p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Google Sign-in button styling */
+.auth button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Button hover and active states */
+.auth button:hover {
+    background-color: #357ae8;
+}
+
+.auth button:active {
+    transform: scale(0.98);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 480px) {
+    .auth p {
+        font-size: 16px;
+        margin-bottom: 16px;
+    }
+
+    .auth button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
